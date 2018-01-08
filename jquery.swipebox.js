@@ -650,11 +650,11 @@
 					event.preventDefault();
 					event.stopPropagation();
 
-					if ( event.keyCode === 37 ) {
+					if ( event.keyCode === 37 || event.keyCode === 83 ) { //Modified by Rich to support "S" key
 
 						$this.getPrev();
 
-					} else if ( event.keyCode === 39 ) {
+					} else if ( event.keyCode === 39 || event.keyCode === 87 ) { //Modified by Rich to support "W" key
 
 						$this.getNext();
 
